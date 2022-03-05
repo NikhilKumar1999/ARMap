@@ -1,0 +1,16 @@
+<!Doctype html>
+<head>
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/1.0.2/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- create your content here. just a box for now -->
+    <a-sphere src="images/mapserv.jpg" radius="1.25" position="0 1.25 -5"></a-sphere>
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
+</html>
